@@ -1,0 +1,214 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1c3;   
+    --red-color: #ff3150;
+    --yellow-color: #ffc400; 
+    --section-color: #eff7fa; 
+    --facebook-color: #1877f2;
+    --twitter-color:  #1da1f2;
+    --linkedIn-color:#0077b5;
+    --youtube-color: #ff0000;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    transition: all ease 5ms;
+}
+.main-btn:hover{
+    background-color: #ca263e;
+    color: #fcfcfc;
+}
+
+.main-title::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* start navbar*/
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:active , 
+.navbar .navbar-nav .nav-link:focus ,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+
+.nav-search{
+    border-left:1px solid var(--green-color) ;
+}
+
+.nav-search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: #fff;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar*/
+
+/*start landing*/
+.landing{
+   background-color: var(--dark-color); 
+   min-height: calc(100vh - 72px);
+}
+/*end landing*/
+
+/*start features*/
+.features .feat .icon-holder{
+    height: 200px;
+}
+.features .feat .icon-holder svg{
+    left: 50%;
+    transform: translate(-50%);
+}
+.features .feat .icon-holder .number-icon{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .feat .icon-holder .shape-icon{
+color: var(--green-color);
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+/*end features*/
+
+/*start work*/ 
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    overflow: hidden;
+    padding: 3px;
+}
+.our-work .box::before{
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: hsla(175, 63%, 51%, 0.75);
+    content: attr(data-work);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fcfcfc;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 3px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/*end work*/
+
+/*start stuff*/
+.stuff .description{
+    max-width: 500px;    
+}
+/*end stuff*/
+
+/*start team*/
+.our-team{
+    background-color: var(--section-color);
+}
+.our-team h2{
+    color: var(--yellow-color);
+    margin-bottom: 0.5rem;
+}
+.our-team .box h3{
+    background-color: var(--green-color);
+    font-size: 1.5rem;    
+}
+/*end team*/
+
+/*start project*/
+.project{
+    background-color: var(--dark-color);
+
+}
+/*end project*/
+
+/*start subscribtion*/
+.subscribtion{
+    background-color: var(--yellow-color);
+
+}
+.subscribtion input[type=email]{
+    border: none !important;
+    border-bottom: 1px solid white !important;
+}
+.subscribtion input[type =email]:focus{
+    outline: none;
+}
+.subscribtion input::placeholder{
+    color: white;
+}
+
+.subscribtion .sub-btn{
+    color: var(--yellow-color) !important;    
+}
+/*end subscribtion*/
+
+/*start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright span{
+    color: var(--green-color);    
+}
+.footer .copyright div > span{
+    color: var(--yellow-color) !important;
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: var(--facebook-color);    
+}
+.footer .twitter{
+    background-color: var(--twitter-color);    
+}
+.footer .linkedin{
+    background-color: var(--linkedIn-color);    
+}
+.footer .youtube{
+    background-color: var(--youtube-color);
+}
+/*end footer*/
+
